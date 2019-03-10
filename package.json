@@ -1,0 +1,23 @@
+{
+  "name": "autobot",
+  "version": "1.0.0",
+  "description": "Automate the login process",
+  "main": "index.js",
+  "dependencies": {
+    "nightmare": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlFalahTaieb/AutoBot.git"
+  },
+  "author": "Chedli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlFalahTaieb/AutoBot/issues"
+  },
+  "homepage": "https://github.com/AlFalahTaieb/AutoBot#readme"
+}
