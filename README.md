@@ -1,2 +1,1 @@
-#Automate with NightmareJs (Project Abondoned due to NightmareJS will migrate to Nightwatch or Puppeteer)
-✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️
+#Automate with NightmareJs (Project Abandoned due to NightmareJS will migrate to Nightwatch or Puppeteer)
