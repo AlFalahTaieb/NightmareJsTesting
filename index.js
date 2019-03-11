@@ -2,7 +2,7 @@ const Nightmare = require('nightmare')
 const sourceFile = require('./secrets')
 const readline = require('readline');
 const nightmare = Nightmare({
-  // openDevTools: {mode: 'detach'},
+  openDevTools: {mode: 'detach'},
   show: true
 })
 
@@ -25,7 +25,19 @@ rl.question('Where do you want to log in ? ', (answer) => {
         .catch(error => {
           console.error('Search failed:', error)
         })
-
+    case ('mail'):
+      nightmare
+        .goto(`https://accounts.google.com/signin`)
+        .type('#gaia_loginform', sourceFile.email)
+        // .type('#pass', sourceFile.password)
+        .click('#next')
+        //   .wait('#r1-0 a.result__a')
+        //   .evaluate(() => document.querySelector('#r1-0 a.result__a').href)
+        //   .end()
+        //   .then(console.log)
+        .catch(error => {
+          console.error('Search failed:', error)
+        })
 
 
       break
