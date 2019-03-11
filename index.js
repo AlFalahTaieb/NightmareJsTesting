@@ -13,7 +13,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Where do you want to log in ? ', (answer) => {
+rl.question(`${sourceFile.FgCyan}'Where do you want to log in ? `, (answer) => {
 
   switch (answer) {
     case ('facebook'):
@@ -27,10 +27,11 @@ rl.question('Where do you want to log in ? ', (answer) => {
         })
     case ('mail'):
       nightmare
-        .goto(`https://accounts.google.com/signin`)
+        .goto(`https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin`)
         .type('#gaia_loginform', sourceFile.email)
         // .type('#pass', sourceFile.password)
         .click('#next')
+        .type('#pass', sourceFile.password)
         //   .wait('#r1-0 a.result__a')
         //   .evaluate(() => document.querySelector('#r1-0 a.result__a').href)
         //   .end()
